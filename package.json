@@ -1,0 +1,18 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "demo bdd with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },"cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/login"
+  }
+}
